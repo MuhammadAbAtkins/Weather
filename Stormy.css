@@ -21,10 +21,10 @@ body {
 
 .toggle
 {
-    position:relative;
-    width: 320px;
-    height: 160px;
-    border-radius: 150px;
+    position:absolute;
+    width: 120px;
+    height: 60px;
+    border-radius: 80px;
     background: rgba(94, 94, 168, 0.805);;
 }
 
