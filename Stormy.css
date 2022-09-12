@@ -19,6 +19,11 @@ body {
     font-family: 'Verdana', sans-serif;
 }
 
+body.active 
+{
+    background: #f3f1f0;
+}
+
 .toggle
 {
     position: absolute;
