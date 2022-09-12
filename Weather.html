@@ -11,6 +11,14 @@
     <nav class="toggle">
         <i class="gauge"></i>
     </nav>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classlist.toggle('active');
+            body.classlist.toggle('active');
+        }
+    </script>
     <header> 
         <h1>Query this, Weather Edition</h1>
     </header>
