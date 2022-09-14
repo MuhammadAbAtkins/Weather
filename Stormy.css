@@ -14,16 +14,23 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(7, 3, 43);
+    background-color: rgb(155,232,255);
     transition: 0.8s;
     font-family: 'Verdana', sans-serif;
 }
 
-body.active 
+/*Weathers*/
+body.autumn 
 {
     background: rgb(243, 188, 46);
     /* Button clicked once| Change Background */
 }
+body.summer 
+{
+    background: #00e2ff;
+    /* Button clicked once| Change Background */
+}
+/*Weathers*/
 
 #toggle
 {
@@ -31,7 +38,7 @@ body.active
     width: 120px;
     height: 60px;
     border-radius: 80px;
-    background: rgb(155,232,255);
+    background: rgba(170, 170, 240, 0.805);
     cursor: pointer;
     box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
                 inset 0 8px 8px  rgba(0,0,0,0.1),
@@ -40,7 +47,7 @@ body.active
     /* Button clicked once| Change Background */
 }
 
-#toggle.active 
+#toggle.autumn 
 {
     background: rgb(243, 188, 46);
     box-shadow: inset 0 2px 60px rgba(0,0,0,0.1),
@@ -48,6 +55,15 @@ body.active
                 inset 0 -4px 8px rgba(0,0,0,0.05);
     /* Button clicked once| Change Background */
 }
+#toggle.summer 
+{
+    background: #00e2ff;
+    box-shadow: inset 0 2px 60px rgba(0,0,0,0.1),
+                inset 0 2px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 8px rgba(0,0,0,0.05);
+    /* Button clicked once| Change Background */
+}
+/*Button Itself color*/
 #toggle .gauge 
 {
     position: absolute;
@@ -55,7 +71,7 @@ body.active
     left: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(to bottom, rgba(91,201,255), rgba(0,184,255));
+    background: linear-gradient(to bottom, rgba(214, 214, 221, 0.805), rgba(235, 235, 243, 0.805));
     border-radius: 50%;
     transform: scale(0.8);
     box-shadow: inset 0 8px 40px rgba(0,0,0,0.5),
@@ -63,15 +79,23 @@ body.active
                 inset 0 4px 4px rgba(255,255,255,0.2);
     transition: 0.8s;   
 }
-
-#toggle.active .gauge 
+#toggle.autumn .gauge 
 {
     left: 60px;
-    background: linear-gradient(to bottom, rgba(214, 214, 221, 0.805), rgba(235, 235, 243, 0.805));
+    background: linear-gradient(to bottom, rgb(223, 186, 93), rgb(203, 150, 16));
     box-shadow: inset 0 8px 40px rgba(0,0,0,0.1),
                 inset 0 4px 4px rgba(255,255,255,0.2),
                 inset 0 4px 4px rgba(255,255,255,0.2);
 }
+#toggle.summer .gauge 
+{
+    left: 60px;
+    background: linear-gradient(to bottom, rgba(91,201,255), rgba(0,184,255));
+    box-shadow: inset 0 8px 40px rgba(0,0,0,0.1),
+                inset 0 4px 4px rgba(255,255,255,0.2),
+                inset 0 4px 4px rgba(255,255,255,0.2);
+}
+/*Button Itself color*/
 
 header h1 {
     text-align: justify;
